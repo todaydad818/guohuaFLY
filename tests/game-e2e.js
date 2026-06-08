@@ -1,4 +1,4 @@
-﻿/**
+/**
  * tests/game-e2e.js — E2E 浏览器测试
  * 
  * 依赖: playwright (需安装: npm install playwright)
@@ -98,7 +98,7 @@ async function runHttpTests() {
             const res = await fetch(`http://${HOST}:${PORT}/`);
             assert(res.status === 200, `状态码 ${res.status}`);
             const text = await res.text();
-            assert(text.includes("郭华打飞机"), "页面内容不包含标题");
+            assert(text.includes("guohua2.0"), "页面内容不包含标题");
         });
 
         await testAsync("JS 文件均可访问", async () => {
@@ -163,7 +163,7 @@ async function runBrowserTests(browser) {
 
     await testAsync("页面标题正确", async () => {
         const title = await page.title();
-        assert(title.includes("郭华打飞机"), `标题为: ${title}`);
+        assert(title.includes("guohua2.0"), `标题为: ${title}`);
     });
 
     await page.screenshot({ path: path.join(SCREENSHOT_DIR, "01-menu.png") });
@@ -222,7 +222,7 @@ async function runBrowserTests(browser) {
 // ── 主流程 ──
 async function main() {
     console.log("╔══════════════════════════════════════╗");
-    console.log("║     ✈️  郭华打飞机 — E2E 测试       ║");
+    console.log("║     ✈️  guohua2.0 — E2E 测试       ║");
     console.log("╚══════════════════════════════════════╝");
 
     await runHttpTests();
