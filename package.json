@@ -1,0 +1,13 @@
+﻿{
+  "name": "shooting-game-tests",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node tests/syntax-check.js && node tests/game-e2e.js",
+    "test:syntax": "node tests/syntax-check.js",
+    "test:e2e": "node tests/game-e2e.js"
+  },
+  "dependencies": {
+    "playwright": "^1.60.0"
+  }
+}

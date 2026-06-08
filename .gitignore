@@ -1,0 +1,10 @@
+﻿node_modules/
+*.log
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# 备份文件
+*.bak
