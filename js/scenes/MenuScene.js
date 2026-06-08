@@ -1,4 +1,4 @@
-﻿/**
+/**
  * MenuScene - 主菜单界面，可爱卡通风格
  */
 class MenuScene extends Phaser.Scene {
@@ -45,7 +45,7 @@ class MenuScene extends Phaser.Scene {
 
         // —— 标题 ——
         const titleY = height * 0.22;
-        const title = this.add.text(width / 2, titleY, '✈️ 小飞机大冒险', {
+        const title = this.add.text(width / 2, titleY, 'guohua2.0', {
             fontSize: '38px',
             fontFamily: 'Microsoft YaHei, sans-serif',
             color: '#FF6B6B',

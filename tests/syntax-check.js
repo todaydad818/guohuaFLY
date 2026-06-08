@@ -1,4 +1,4 @@
-﻿/**
+/**
  * tests/syntax-check.js — 语法检查 + 项目结构验证
  * 零依赖，只使用 Node.js 内置模块
  */
@@ -62,8 +62,8 @@ console.log("\n📄 index.html 内容检查");
 
 const html = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
 
-test("标题包含「郭华打飞机」", () => {
-    assert(html.includes("郭华打飞机"), `标题错误，实际内容不包含「郭华打飞机」`);
+test("标题包含「guohua2.0」", () => {
+    assert(html.includes("guohua2.0"), `标题错误，实际内容不包含「guohua2.0」`);
 });
 
 test("加载 Phaser CDN", () => {
